@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import LinkCard from './components/LinkCard'
 import links from './data/links'
+import LatestRelease from './components/LatestRelease'
 
 export default function Home() {
   return (
@@ -26,8 +27,11 @@ export default function Home() {
         {/* Tagline */}
         <p className="text-sm text-[#666] text-center mb-6">
           Músico · Rapero · Productor<br />
-          Hermosillo, Son. / Querétaro, Qro.
+          Hermosillo, Son. / Querétaro, Qro. / México
         </p>
+
+        {/* Último Lanzamiento */}
+        <LatestRelease/>
 
         {/* Links */}
         <div className="w-full flex flex-col gap-3">

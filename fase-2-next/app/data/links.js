@@ -1,7 +1,7 @@
 const links = [
     {
         id: 1,
-        label: "Escpuchame en Spotify",
+        label: "Escúchame en Spotify",
         href: "https://open.spotify.com/intl-es/artist/6Hk26Kx9gPWLxXDtEH5vr0",
         accent: false,
         disabled: false,
