@@ -2,11 +2,14 @@ import Image from 'next/image'
 import LinkCard from './components/LinkCard'
 import links from './data/links'
 import LatestRelease from './components/LatestRelease'
+import EventCountdown from './components/EventCountdown'
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#0a0a0a] flex justify-center px-5 py-12">
       <div className="w-full max-w-md flex flex-col items-center gap-3">
+
+        
 
         {/* Foto de perfil */}
         <div className="w-24 h-24 rounded-full overflow-hidden border border-[#222] mb-2">
@@ -29,6 +32,8 @@ export default function Home() {
           Músico · Rapero · Productor<br />
           Hermosillo, Son. / Querétaro, Qro. / México
         </p>
+
+        <EventCountdown />
 
         {/* Último Lanzamiento */}
         <LatestRelease/>
