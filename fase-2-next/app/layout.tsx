@@ -1,3 +1,4 @@
+import { ReactNode } from 'react'
 import { Bebas_Neue, DM_Sans } from 'next/font/google'
 import './globals.css'
 
@@ -17,7 +18,7 @@ export const metadata = {
   description: 'Músico · Rapero · Productor — Hermosillo, Son. / Querétaro, Qro.',
 }
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es">
       <body className={`${bebas.variable} ${dm_sans.variable} bg-[#0a0a0a]`}>
