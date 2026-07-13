@@ -1,4 +1,12 @@
-export default function LinkCard({ href, label, accent, disabled, badge }) {
+type LinkCardProps = {
+  href: string
+  label: string
+  accent?: boolean
+  disabled?: boolean
+  badge?: string
+}
+
+export default function LinkCard({ href, label, accent, disabled, badge }: LinkCardProps) {
     return (
         <a 
             href={href} 
